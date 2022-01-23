@@ -17,6 +17,7 @@
 - [ ] include Tailwind in our HTML
     - [ ] Run generation command
     - [ ] include generated file in HTML file
+    - [ ] Run live server
 - [ ] Code Login page
   unordered list:  - [ ] Add HTML page ...?
     - [ ] HTML page
