@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>JS - Company news</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-<h1 class="text-4x1">Login Page</h1>
-<a href="Dashboard.html"
-class="px-2 bg-grey-200"
->
-    Login</a>
 
-<p>Good news</p>
+<div class="w-1/2 mx-auto mt-24 p-4 bg-gray-200">
+    <h1 class="text-2xl my-3 border-b-2 border-gray-400">Login Here</h1>
+    <div>
+    <form action="" >
+        <input type="text" name="email" id="email" class="w-full my-2 p-2 outline-none focus:outline"
+        placeholder="Enter your email">
+        <input type="password" name="password" id="password" class="w-full mb-2 outline-none focus:outline"
+        placeholder="Enter your password">
+
+        <input type="submit" value="Login" class="w-full bg-green-300">
+
+    </form>
+
+    <div class="text-xs flex justify-between">
+        <a href="#" class="mt-3">Sign up</a>
+        <a href="#" class="mt-3">Forgot Password</a>
+    </div>
+    </div>
+</div>
 </body>
 </html>
