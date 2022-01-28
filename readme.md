@@ -17,9 +17,9 @@
     - [x] add `css/tailwind.css` file with tail imports
     - [x] Run live server
 - [ ] Code Login page
-    - [ ] a user can type in the proper email
-    - [ ] a user can type in the password
-    - [ ] if either is empty, give user feedback
+    - [x] a user can type in the proper email
+    - [x] a user can type in the password
+    - [x] if either is empty, give user feedback
     - [ ] if a new user then sign up
     - [ ] if all is OK, send them to the dashboard
     - [ ] if needs help, submit questions
@@ -27,7 +27,7 @@
     - [ ] a user can check the news
     - [ ] a user can add news
     - [ ] a user can submit the news
-    - [ ] a user can check the new news wwindow
+    - [ ] a user can check the new news window
 - [ ] Test everything
 - [ ] Update in github repository
 - [ ] Deploy to vercel

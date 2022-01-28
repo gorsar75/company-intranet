@@ -22,7 +22,7 @@ function checkIsNotEmpty(domInput, errorMessage) {
         console.log(errorMessage);
 
     const div = document.createElement('div');
-    div.innerHTML = `<p class="bg-red-400 text white"> ${errorMessage}</p>`;
+    div.innerHTML = `<p class="bg-red-400 text white p-2"> ${errorMessage}</p>`;
 
     showError.appendChild(div);
 
