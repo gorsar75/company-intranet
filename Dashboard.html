@@ -2,9 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="bg-blue-100">
 
+<div class="bg-blue-100 flex h-screen">
+<div class="w-1/2 p-16 bg-blue-100 space-y-3">
+    <h1 class="text-4xl">Company News Portal</h1>
+    <hr>
+    <div id="news-add" class="p-6">
+        <form id="news-form">
+          <div class="mb-3">
+            <input type="search" name="search-news" id="search-news"
+            placeholder="Search news" class="w-full px-3 py-6 outline-none">
+          </div>
+            <div class="mb-3">
+            <textarea name="news" id="news" cols="30" rows="8"
+                      class="w-full px-3 py-2 outline-none">
+
+            </textarea>
+            </div>
+          <div class="mb-3">
+            <input type="text" name="news-submitted-by" id="news-submitted-by"
+            placeholder="Enter your name" class="w-full px-3 py-2 outline-none">
+          </div>
+          <div class="mb-3">
+            <textarea name="news-content" id="news-content" cols="30" rows="10"
+                      class="w-full px-3 py-2 outline-none">
+
+            </textarea>
+          </div>
+
+            <input type="submit" value="+ Add News" class="px-3 py-2 w-full bg-blue-400">
+        </form>
+    </div>
+</div>
+
+    <div id="news-show" class="w-1/2 p-36 bg-blue-200 space-y-3">
+        <div class="pb-3 border-b-2 border-gray-500">
+            <h3>Watchman Nee</h3>
+            <p class="text text-xs">U.S. economy grew 6.9% in fourth quarter, GDP shows, as businesses
+                restocked and consumers boosted spending</p>
+        </div>
+
+        <div class="pb-3 border-b-2 border-gray-500">
+            <h3>Margaret Barber</h3>
+            <p class="text-xs">Treasury yield curve flattens to levels not seen since 2019-2020 after
+                Fed's policy update</p>
+        </div>
+        <div class="pb-3 border-b-2 border-gray-500">
+            <h3>Witness Lee</h3>
+            <p class="text-xs">Here’s how painful the economic loss will be for
+                the U.S. from unchecked climate change</p>
+        </div>
+    </div>
+</div>
+<script src="js/dashboard.js"></script>
 </body>
 </html>
+

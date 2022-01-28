@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS - Company news</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Company Intranet</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-
-<div class="w-1/2 mx-auto mt-24 p-4 bg-gray-200">
+<body class="bg-indigo-300">
+<div class="w-1/2 mx-auto mt-16 p-8 bg-red-100"></div>
+<div class="w-1/2 text-2xl mx-80 my-3 mt-20 p-6">Welcome to company's important news</div>
+<div class="w-1/2 mx-auto mt-24 p-4 bg-red-100">
     <h1 class="text-2xl my-3 border-b-2 border-gray-400">Login Here</h1>
     <div>
-    <form action="" >
-        <input type="text" name="email" id="email" class="w-full my-2 p-2 outline-none focus:outline"
-        placeholder="Enter your email">
-        <input type="password" name="password" id="password" class="w-full mb-2 outline-none focus:outline"
-        placeholder="Enter your password">
+        <div id="show-error"></div>
+    <form action="">
+        <input type="text" name="email" id="email" value="" placeholder="Enter your email"
+               class="w-full my-2 p-2 outline-none focus:outline">
 
-        <input type="submit" value="Login" class="w-full bg-green-300">
+        <input type="password" name="password" id="password" value=""
+               placeholder="Enter password" class="w-full mb-2 p-2 outline-none focus:outline">
+
+        <input type="submit" value="Login" class="w-full bg-red-400">
 
     </form>
 
@@ -26,5 +29,6 @@
     </div>
     </div>
 </div>
+<script src="js/app.js"></script>
 </body>
 </html>
