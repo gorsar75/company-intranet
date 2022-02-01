@@ -1,4 +1,4 @@
-const allNews = [{
+let allNews = [{
     id: 1,
     name: "Watchman Nee",
     date: "01-26-2022",
@@ -19,14 +19,11 @@ const allNews = [{
 
 const newsShowEl = document.getElementById('news-show');
 const newsForm = document.getElementById('news-form');
-const newsRemove = document.getElementById('news-remove');
 
 displayAllNews(allNews);
 
-newsForm.addEventListener('submit',  listener: (event: Event) => {
+newsForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log(document.getElementById('news-submitted-by').value );
-    console.log(document.getElementById('news-content').value);
 
 
 const newNews = {
@@ -48,23 +45,29 @@ displayAllNews(allNews)
 function displayAllNews(items) {
     newsShowEl.innerHTML = "";
 
-    items.forEach((item) => addNewCard(item, newsShowEl))
+    items.map(
+        item => addNewCard(item, newsShowEl)
+    );
 }
-//     for (const key in items) {
-//         addNewCard(items)
-//     }
-// }
+
 function addNewCard(item, displayEl) {
     const newsCardDiv = document.createElement('div');
 
-        newsCardDiv.innerHTML =
-            <div class="pb-3 border-b-2 border-gray-500">
-                <h3> ${item.name} </h3>
-                <h5 class="text-xs text-gray-600">${item.date}</h5>
-                <p class="text-xs">${item.content}</p>
+    newsCardDiv.innerHTML = `
+          <div class="p-3 m-2 bg-gray-200 shadow-sm">
+          <span class="mb-2 bg-black text-white w-2 p-2 rounded-full cursor-pointer"
+            onclick="deleteNews(${item.id})"
+          >
+          ⨯
+          </span>
+           <h3> ID: ${item.id} | ${item.name} </h3>
+            <h5 class="text-xs text-gray-600"> ${item.date} </h5>
+            <p class="text-xs"> ${item.content} </p>
+        </div>
+    `;
 
-            </div>;
-        displayEl.appendChild(newsCardDiv)
-    }
+    displayEl.appendChild(newsCardDiv);
+}
+
 
 
